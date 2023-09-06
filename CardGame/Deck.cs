@@ -9,12 +9,32 @@ namespace CardGame
     public class Deck
     {
         private Card[] cards;
+        private int top;
 
-        public Deck() { }
-        public Card Peek() { return null; }
-        public void Shuffle() { }
-        public Card Deal() { return null; }
+        public Deck() 
+        {
+            cards = new Card[52];
+            for(int i = 0;i < 4; i++)
+            {
+                int index = 0;
+                for(int j = 0;j < 13; j++)
+                {
+                    cards[index] = new Card(i, j);
+                    index++;
+                }
+            }
+        }
+        public Card Peek() 
+        {
+            top = 0;
+            
+        }
+        public void Shuffle() 
+        {
+             
+        }
+        public Card Deal() { return cards[top]; }
 
-        public void Reset() { }
+        public void Reset() { top = 0; }
     }
 }
