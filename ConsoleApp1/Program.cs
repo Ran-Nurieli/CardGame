@@ -1,4 +1,6 @@
-﻿namespace CardGame
+﻿using System;
+
+namespace CardGame
 {
     internal class Program
     {
@@ -12,10 +14,13 @@
             //Console.WriteLine(c1);
             //Console.WriteLine(c3);
             //Console.WriteLine(c4);
-            
 
-            Deck deck = new Deck();
-            Console.WriteLine(deck.ToString());
+
+            //Deck deck = new Deck();
+            //Console.WriteLine(deck.ToString());
+
+
+
 
 
         }
