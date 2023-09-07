@@ -13,6 +13,7 @@ namespace ConsoleApp1
 
         public Player(string name)
         {
+            //
             this.name = name;
             hand = new Card[5];
 
